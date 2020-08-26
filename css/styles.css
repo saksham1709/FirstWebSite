@@ -1,0 +1,215 @@
+
+  *{
+
+    margin:0;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(129, 126, 98);
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: cadetblue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+} 
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar ul li{
+    padding: 20px 18px;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 20px;
+    padding: 4px 15px;
+    transition: all 1s ;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    transform: scale(1.2);
+}
+
+
+#head-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 647px;
+}
+#head-info::before{
+    content: "";
+    background:url('sebastian-boring-8zD7rs8UpxU-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#head-info h1{
+    position: relative;
+    bottom:60px;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    padding: 20px 23px;
+}
+#head-info p{
+    position: relative;
+    bottom: 75px;
+}
+p{
+    
+    font-size: 1.3rem;
+    padding: 8px;
+    font-weight: bolder;
+}
+
+#middle{
+    display: flex;
+    margin: 35px;
+}
+#middle .items{ 
+    padding: 20px 25px;
+    margin: 3px 20px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    background: url('shivam-baraik-IlduODUMH2A-unsplash.jpg') no-repeat center center/cover;
+    opacity: 1;
+}
+.items p{
+    text-shadow: 1px -2px 9px blanchedalmond;
+}
+h2{
+    justify-content: center;
+    font-size: 2rem;
+}
+.h-primary{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 250px;
+    background:url('andy-holmes-UE7ep4SPvxI-unsplash.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#about p a{
+    text-decoration: none;
+    color:blue;
+}
+#about p a:hover{
+    color: black;
+}
+#footer{
+    background-color:rgb(37, 28, 28);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom input, 
+#bottom textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#bottom form{
+    width: 70%;
+}
+#bottom p{
+    font-size: 15px;
+}
+#myBtn a{
+    text-decoration: none;
+}
+#myBtn {
+        color: red;
+        position: fixed;
+        bottom: 10px;
+        float: right;
+        right: 45.5%;
+        left: 88.25%;
+        width: 80px;
+        height: 35px;
+        font-size: 1.3rem;
+        border-radius: 18px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+#myBtn:hover {
+    background-color: #7dbbf1;
+}
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: darkgoldenrod;
+}
+#services h1{
+    font-size: 2rem;
+}
+#footer p a{
+    text-decoration: none;
+    color: white;
+}
+#footer p a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 715px){
+    #middle{
+        flex-wrap: wrap;
+    }
+}
