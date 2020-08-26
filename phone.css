@@ -1,0 +1,44 @@
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+#head-info{
+    height: 390px; 
+    padding: 3px 28px;
+}
+
+#head-info::before{
+    height: 490px; 
+}
+#head-info h1{
+    font-size: 2rem;
+}
+
+#head-info p{
+    font-size: 13px;
+}
+#middle{
+    flex-direction: column;
+}
+
+#middle .items { 
+    padding: 14px;
+    margin: 2px -20px; 
+    margin-bottom: 20px;
+}
+#about{
+    width: 100%;
+}
+#about .h-primary{
+    font-size: 2rem;
+}
+
+#myBtn{
+    left: 80%;
+}
